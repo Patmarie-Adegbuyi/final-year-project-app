@@ -1,0 +1,102 @@
+body{
+    font-family: Inter, sans-serif;
+    margin: 0;
+}
+
+.background{
+    background-image: url("../../assets/maze.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 40px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 70vh;
+    max-width: 90%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 0 0 20px 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.textbox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.textbox input {
+    width: 95%;
+    height: 44px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    line-height: 26px;
+    background: #F3F4F6;
+    border-radius: 6px;
+    border: 2px solid #E5E7EB;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.textbox input:hover {
+    color: #BCC1CA;
+    background: #E5E7EB;
+}
+
+.textbox input:focus {
+    color: #171A1F;
+    background: #FFFFFF;
+    border: 2px solid #007bff;
+}
+
+.join-button {
+    width: 95%;
+    height: 44px; 
+    padding: 0 16px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Inter, sans-serif; 
+    font-size: 16px; 
+    line-height: 26px;
+    color: #fff;
+    background: #56DCC5FF;
+    border: none; 
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.join-button:hover {
+    color: #12564AFF;
+    background: #29C6ACFF;
+}
+
+.join-button:hover:active {
+    color: #12564AFF;
+    background: #23AA93FF;
+}
+
+.join-button:disabled {
+    opacity: 0.6; 
+}

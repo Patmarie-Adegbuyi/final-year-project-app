@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import UsernameInput from "./components/usernameInput";
+import WaitingRoom from "./components/waitingRoom";
+import DifficultyLevel from "./components/difficultyLevel";
+import Game from "./components/game";
+import GameOver from "./components/gameOver";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<UsernameInput />} />
+        <Route path="/waiting/:playerId" element={<WaitingRoom />} />
+        <Route path="/difficultyLevel/:groupId" element={<DifficultyLevel />} />
+        <Route path="/game/:groupId/:difficulty" element={<Game />} />
+        <Route path="/game-over/:groupId" element={<GameOver />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

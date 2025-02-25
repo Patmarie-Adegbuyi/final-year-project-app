@@ -1,0 +1,116 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #cddeff, #96b7f8);
+    color: black;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-info {
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+    margin-bottom: 8px;
+    max-width: 90%;
+}
+
+.game-info h2 {
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: bounce 1.5s infinite alternate; /* bounce effect */
+}
+
+.game-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0a6792;
+    animation: pulse 1s infinite alternate;
+}
+
+.game-info p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+/* pulsing effect for the turn indicator */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+canvas {
+    display: block;
+    margin: 10px auto;
+    max-width: 80vw;
+    max-height: 50vh;
+    border: 3px solid white;
+    border-radius: 8px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.controls button {
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.chat-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    max-width: 250px;
+}  
+
+.quit-game {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quit-game:hover {
+    background-color: #d43f3f;
+    transform: scale(1.05);
+}
+
+.quit-game:active {
+    transform: scale(0.95);
+}
