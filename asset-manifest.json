@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/final-year-project-app/static/css/main.d3e341d1.css",
-    "main.js": "/final-year-project-app/static/js/main.37296e32.js",
+    "main.js": "/final-year-project-app/static/js/main.8dc1d3d4.js",
     "static/media/maze.jpg": "/final-year-project-app/static/media/maze.ce6fefd994cab390a4bf.jpg",
     "index.html": "/final-year-project-app/index.html",
     "main.d3e341d1.css.map": "/final-year-project-app/static/css/main.d3e341d1.css.map",
-    "main.37296e32.js.map": "/final-year-project-app/static/js/main.37296e32.js.map"
+    "main.8dc1d3d4.js.map": "/final-year-project-app/static/js/main.8dc1d3d4.js.map"
   },
   "entrypoints": [
     "static/css/main.d3e341d1.css",
-    "static/js/main.37296e32.js"
+    "static/js/main.8dc1d3d4.js"
   ]
 }
